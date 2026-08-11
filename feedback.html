@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback | Pravin</title>
+    <style>
+        body {
+            background-color: black;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            color: white;
+            text-align: center;
+        }
+        nav {
+            background-color: #EB4221;
+            padding: 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 20px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        nav a:hover {
+            color: #FF4200;
+        }
+        .container {
+            padding: 50px;
+            max-width: 800px;
+            margin: auto;
+        }
+        hr {
+            border: 2px solid #FF4200;
+            width: 60%;
+            margin: 20px auto;
+        }
+        h1, h3 {
+            color: #EB4221;
+        }
+        .stars input {
+            display: none;
+        }
+        .stars label {
+            font-size: 40px;
+            color: gray;
+            cursor: pointer;
+        }
+        .stars input:checked ~ label {
+            color: #EB4221;
+        }
+        textarea {
+            width: 70%;
+            padding: 12px;
+            margin-top: 15px;
+            font-size: 16px;
+        }
+        input[type="submit"] {
+            background-color: #EB4221;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            margin-top: 20px;
+            cursor: pointer;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        input[type="submit"]:hover {
+            background-color: #FF4200;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="feedback.html">Feedback</a>
+    </nav>
+
+    <div class="container">
+        <h1>Feedback</h1>
+        <hr>
+        <form>
+            <h3>Rate My Website:</h3>
+            <div class="stars">
+                <input type="radio" id="star5" name="rating" value="5">
+                <label for="star5">&#9733;</label>
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4">&#9733;</label>
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3">&#9733;</label>
+                <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2">&#9733;</label>
+                <input type="radio" id="star1" name="rating" value="1">
+                <label for="star1">&#9733;</label>
+            </div>
+
+            <h3>Leave a Message:</h3>
+            <textarea rows="5" placeholder="Your feedback here..."></textarea><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
